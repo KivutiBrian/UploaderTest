@@ -1,0 +1,14 @@
+version: '3'
+services: 
+    web:
+        build: .
+        container_name: uploader
+        restart: always
+        ports:
+            - 5000:80
+	volumes:
+	    - myvol:/root/images
+
+     volumes:
+	myvol:
+	  external: true
