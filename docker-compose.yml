@@ -9,6 +9,6 @@ services:
         volumes:
             - myvol:/root/images
 
-    volumes:
-        myvol:
+volumes:
+    myvol:
         external: true
